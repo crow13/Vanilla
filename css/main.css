@@ -1,0 +1,15 @@
+/* border classes */
+.gryBrder {border:1px solid #a4a4a4;}
+.rndbox5 {padding:10px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.tabLook {padding:10px; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px;}
+
+/* backgrounds */
+.greyBkgrd {background:#a4a4a4;}
+
+/* display classes */
+.show, .dBlock {display:block;}
+.hide, .dNone {display:none;}
+.dInline {display:inline;}
+
+/* misc classes */
+.cPointer {cursor: pointer;}
