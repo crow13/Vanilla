@@ -23,6 +23,17 @@ var addEvent = (function () {
 	};
 })();
 
+var getSelector = function(elSel){
+    var idOrClass = elSel.substring(0,1);
+    if(idOrClass === ".") {
+        return document.getElementsByClassName(elSel.substring(1,elSel.length));
+    }
+    if (idOrClass === "#") {
+        return document.getElementById(elSel.substring(1,elSel.length));
+    }
+    return null;
+};
+
 function hasClass(ele,cls) {
 	return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
 }
