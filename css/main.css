@@ -1,10 +1,32 @@
 /* border classes */
 .gryBrder {border:1px solid #a4a4a4;}
-.rndbox5 {padding:10px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
-.tabLook {padding:10px; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px;}
+.rndbox5 {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;}
+.tabLook {
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+}
 
 /* backgrounds */
 .greyBkgrd {background:#a4a4a4;}
+.whtBkgrd {background: #fff;}
+
+/* Margins and Padding */
+.mt5 {margin-top:5px;}
+.mt10 {margin-top:10px;}
+.mt20 {margin-top:20px;}
+.p5 {padding:5px;}
+.p10 {padding:10px;}
+.pt5 {padding-top:5px;}
+.pb5 {padding-bottom:5px;}
+.pl5 {padding-left:5px;}
+.pr5 {padding-right:5px;}
+
+/* widths */
+.w485 {width:485px;}
 
 /* display classes */
 .show, .dBlock {display:block;}
