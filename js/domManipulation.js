@@ -27,24 +27,36 @@ var getSelector = function(elSel){
     var idOrClass = elSel.substring(0,1);
     if(idOrClass === ".") {
         return document.getElementsByClassName(elSel.substring(1,elSel.length));
-    }
-    if (idOrClass === "#") {
+    } else if (idOrClass === "#") {
         return document.getElementById(elSel.substring(1,elSel.length));
+    } else {
+        return document.getElementsByTagName(elSel);
     }
-    return null;
 };
 
 function hasClass(ele,cls) {
-	return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+	return ele.className.indexOf(cls) > -1;
 }
 
 function addClass(ele,cls) {
 	if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+    return ele;
 }
 
 function removeClass(ele,cls) {
 	if (hasClass(ele,cls)) {
 		var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
-		ele.className=ele.className.replace(reg,' ');
+		ele.className = trim(ele.className.replace(reg,' '));
 	}
+    return ele;
+}
+
+function trim(stringToTrim) {
+    return stringToTrim.replace(/^\s+|\s+$/g,"");
+}
+function ltrim(stringToTrim) {
+    return stringToTrim.replace(/^\s+/,"");
+}
+function rtrim(stringToTrim) {
+    return stringToTrim.replace(/\s+$/,"");
 }
