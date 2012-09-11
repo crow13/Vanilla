@@ -1,0 +1,2 @@
+1. The purpose of Vanilla project is to rewrite some of the most commonly used JQuery functions in plain "Vanilla" JavaScript for both education about JavaScript and for speed enhancement.
+2. Installation of Vanilla is simple.  Just reference the files called for at the top of the demo for the appropriate function/widget.  I recommend that you eliminate duplicates to maximize speed enhancement.
