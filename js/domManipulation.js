@@ -51,6 +51,11 @@ function removeClass(ele,cls) {
     return ele;
 }
 
+function remove(id) {
+	el = document.getElementById(id);
+	el.parentNode.removeChild(el);
+}
+
 function trim(stringToTrim) {
     return stringToTrim.replace(/^\s+|\s+$/g,"");
 }
